@@ -1,0 +1,15 @@
+body {
+    font-size: 62.5%;
+}
+
+html {
+    background-color: #83c05b;
+}
+.logo {
+    
+}
+
+.ol {
+    list-style: none;
+    flex-grow: 3rem;
+}
