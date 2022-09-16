@@ -1,15 +1,134 @@
 body {
     font-size: 62.5%;
+    margin: 0.5rem;
 }
 
 html {
     background-color: #83c05b;
 }
+figure img {
+    max-width: 100%;
+}
 .logo {
     
 }
 
-.ol {
-    list-style: none;
-    flex-grow: 3rem;
+.lista {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
 }
+
+.lista li {
+    border-radius: 10px;
+    border: 2px solid #54860e;
+    background-color: #9dcd7c;
+    padding: 0.5rem;     
+}
+
+.maincontent {
+    font-size: 1.0rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* figure {
+    height: 100%;
+    background-color: white;
+    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+} */
+
+figure img {
+    width: 100%;
+}
+
+.vision {
+    display: flex;
+    flex-direction: row;
+}
+.vision > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.vision h3 {
+    flex-grow: 3    ;
+}
+.vision figure {
+    display: none;
+}
+.specials {
+    margin-top: 2rem;
+    background-color: #cbcbcb;
+}
+
+section {
+}
+
+.material-icons {
+    float: right;
+}
+
+.tasty-picture {
+    max-width: 100%;
+}
+
+
+.events {
+    background-color: #cbcbcb;
+}
+
+.interiot-picture {
+}
+
+.news {
+    background-color: #cbcbcb;
+}
+
+.news-lista {
+    background-color: white;
+}
+
+footer {
+    color: white;
+}
+
+.musta {
+    color: black;
+}
+
+header, nav, main, footer, .vision, #boxes section {
+    margin-bottom: 1rem;
+}
+
+#boxes h3 {
+    background-color: lightgray;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#boxes {
+    background-color: white;
+}
+
+/* tabletin säännöt */
+
+@media only screen and (min-width: 426px) {
+    body {
+      background-color: lightblue;
+    }
+    .vision figure {
+        display: block;
+    }
+  }
+
+  /* desktopin säännöt */
+
+@media only screen and (min-width: 769px) {
+    body {
+      background-color: red;
+    }
+  }
