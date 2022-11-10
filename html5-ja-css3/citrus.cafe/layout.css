@@ -55,7 +55,7 @@ figure img {
     flex-basis: 0;
 }
 .vision h3 {
-    flex-grow: 3    ;
+    flex-grow: 3;
 }
 .vision figure {
     display: none;
@@ -90,6 +90,7 @@ section {
 
 .news-lista {
     background-color: white;
+    margin-left: 2.5rem;
 }
 
 footer {
@@ -118,10 +119,44 @@ header, nav, main, footer, .vision, #boxes section {
 
 @media only screen and (min-width: 426px) {
     body {
-      background-color: lightblue;
+      background-color: #83c05b;
     }
     .vision figure {
         display: block;
+    }
+
+    .vision h3 {
+        background-color: #e5ddc3;
+    }
+
+    h3 {
+        padding-top: 3.5rem;
+    }
+
+    .tasty-picture {
+        width: 45%;
+    }
+
+    .interiot-picture {
+        width: 50%;
+        display: flex;
+        flex: 33%;
+        padding: 5px;
+        float: right;
+        margin-top: -16rem;
+        height: 12rem;
+    }
+
+    .lista {
+        display: flex;
+    }
+
+    .lista li {
+        width: 100%;
+    }
+
+    .specials {
+
     }
   }
 
@@ -129,6 +164,6 @@ header, nav, main, footer, .vision, #boxes section {
 
 @media only screen and (min-width: 769px) {
     body {
-      background-color: red;
+      background-color: #83c05b;
     }
   }
