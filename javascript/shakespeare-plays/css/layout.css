@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style: disc;
+    padding: 1rem 1rem 1rem 4rem;
+    list-style: 1.5;
+}
+
+h1,h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+tr {
+    line-height: 1.5;
+}
+
+td {
+    padding-right: 1rem;
+}
+
+/* CSS-säännöt, jotka lisätään javascriptin avulla */
+
+.rivit-vierekkain {
+    display: inline-flex;
+}
+
+.otsikot {
+    list-style: none;
+}
+
+.joka-toinen-rivi {
+    width: 50%;
+}
+
+.joka-toinen-rivi1 tr:nth-child(even) td {
+    background-color: #d3d3d3;
+  }
+.joka-toinen-rivi tr:nth-child(odd) td {
+    background-color: #d3d3d3;
+  }
+
+.background {
+    background-color: #d3d3d3;
+    margin: 2rem;
+}
+
+.dotted {
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    font-weight: 900;
+    color: #7a3a2e;
+}
+ 
+.block {
+    padding: 2rem 2rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+  }

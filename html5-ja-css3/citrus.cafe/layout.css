@@ -1,16 +1,17 @@
+/* Mobile first */
 body {
     font-size: 62.5%;
-    margin: 0.5rem;
 }
 
 html {
     background-color: #83c05b;
 }
-figure img {
-    max-width: 100%;
-}
-.logo {
-    
+
+.logo img{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .lista {
@@ -35,74 +36,68 @@ h3 {
     font-size: 1.5rem;
 }
 
-/* figure {
-    height: 100%;
-    background-color: white;
-    padding-bottom: 1.5rem;
-    padding-top: 0.5rem;
-} */
+figure {
+    display: block;
+} 
 
 figure img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .vision {
     display: flex;
     flex-direction: row;
 }
+
 .vision > * {
-    flex-grow: 1;
-    flex-basis: 0;
+    font-size: 1.5rem;
+    margin: 0.5rem;
 }
+
 .vision h3 {
     flex-grow: 3;
 }
+
 .vision figure {
     display: none;
 }
+
 .specials {
     margin-top: 2rem;
     background-color: #cbcbcb;
-}
-
-section {
 }
 
 .material-icons {
     float: right;
 }
 
-.tasty-picture {
+ .tasty-picture {
     max-width: 100%;
 }
 
-
 .events {
     background-color: #cbcbcb;
-}
-
-.interiot-picture {
 }
 
 .news {
     background-color: #cbcbcb;
 }
 
-.news-lista {
-    background-color: white;
-    margin-left: 2.5rem;
+.date {
+    font-weight: bold;
 }
 
 footer {
     color: white;
+    font-size: 1rem;
 }
 
 .musta {
     color: black;
 }
 
-header, nav, main, footer, .vision, #boxes section {
-    margin-bottom: 1rem;
+header, nav, main, footer, .vision {
+    margin-bottom: 0.5rem;
 }
 
 #boxes h3 {
@@ -111,8 +106,10 @@ header, nav, main, footer, .vision, #boxes section {
     margin-bottom: 0.5rem;
 }
 
-#boxes {
+#boxes section {
     background-color: white;
+    border: white 0.5rem solid;
+    margin-bottom: 0.5rem;
 }
 
 /* tabletin säännöt */
@@ -121,49 +118,76 @@ header, nav, main, footer, .vision, #boxes section {
     body {
       background-color: #83c05b;
     }
+    .lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .lista li {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #boxes section {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    #boxes #news {
+        flex-basis: 100%;
+    }
+    .logo img {
+        width: auto;
+        margin-left: initial;
+    }
     .vision figure {
         display: block;
     }
-
-    .vision h3 {
-        background-color: #e5ddc3;
+    .vision {
+        background-color: white;
     }
-
-    h3 {
-        padding-top: 3.5rem;
+    .vision section {
+       background-color: #efecdd;
+       display: flex;
+       justify-content: center; 
+       align-items: center;
+       margin-right: -0.5rem
     }
+   }
 
-    .tasty-picture {
-        width: 45%;
-    }
-
-    .interiot-picture {
-        width: 50%;
-        display: flex;
-        flex: 33%;
-        padding: 5px;
-        float: right;
-        margin-top: -16rem;
-        height: 12rem;
-    }
-
-    .lista {
-        display: flex;
-    }
-
-    .lista li {
-        width: 100%;
-    }
-
-    .specials {
-
-    }
-  }
 
   /* desktopin säännöt */
 
 @media only screen and (min-width: 769px) {
     body {
       background-color: #83c05b;
+    }
+    #body {
+        margin: 0;
+    }
+    #boxes #news {
+        flex-basis: 0;
+        font-size: 1.3rem;
+    }
+    .maincontent {
+        padding: 1rem;
+    }
+    .lista {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .lista li {
+        padding: 1rem;
+    }
+    footer {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
     }
   }

@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin: 1px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 15vw);
+    grid-gap: 1rem;
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.gallery__item--2 {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.gallery__item--3 {
+  grid-area: 1 / 5 / 4 / 9;
+}
+
+.gallery__item--4 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+.gallery__item--5 {
+  grid-area: 3 / 2 / 6 / 5;
+}
+
+.gallery__item--6 {
+  grid-area: 4 / 5 / 6 / 9;
+}
+.gallery__item--7 {
+  grid-area: 4 / 1 / 4 / 1;
+}
+.gallery__item--8 {
+  grid-area: 3 / 1 / 3 / 1;
+}
+.gallery__item--9 {
+  grid-area: 5 / 1 / 5 / 1;
+}

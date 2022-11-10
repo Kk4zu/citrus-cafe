@@ -1,0 +1,51 @@
+body {
+    font-size: 62.5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin: 0.5rem;
+}
+
+p {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-left: 1rem;
+}
+
+header {
+    border: 1px black solid;
+    border-bottom-style: none;
+    padding: 0.5rem;
+}
+
+div {
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom-style: none;
+}
+
+#kuva {
+    
+}
+
+footer {
+    border: 1px black solid;
+    
+}
+
+div p {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    div {
+        display: flex;
+    flex-direction: column;
+    }
+
+  }
